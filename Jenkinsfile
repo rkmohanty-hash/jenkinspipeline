@@ -10,7 +10,7 @@ pipeline {
 	    stage('test: integration-&-quality'){
 		    
 		steps {
-			input('Do you want to proceed?')
+			echo 'Running the integration and quality test...'
         }
 	    }
         stage('test: functional') {
